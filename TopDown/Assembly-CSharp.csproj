@@ -53,8 +53,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FreePixelMob\Mobs.cs" />
+     <Compile Include="Assets\FreePixelMob\StateRandom.cs" />
      <Compile Include="Assets\MapGenerator.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <None Include="Assets\Kenney\Tilemap\tilemap.txt" />
+     <None Include="Assets\Kenney\License.txt" />
+     <None Include="Assets\FreePixelMob\ReadMe.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/home/michael/Programs/Unity/UnityProjects/TopDown/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
