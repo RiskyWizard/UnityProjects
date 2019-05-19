@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Map : MonoBehaviour {
 
-    public static int width = 256;
-    public static int height = 128;
+    public static int width = 128;
+    public static int height = 64;
 
     static GameObject[,] mapGrid;
     string seed;
@@ -37,6 +37,7 @@ public class Map : MonoBehaviour {
         }
         */
 		
+        GameObject.Instantiate(Resources.Load<GameObject>("Thing"),SpawnPoint(),Quaternion.identity);
 	}
 
     void Update() {

@@ -4,7 +4,7 @@ public class EnemyController : MonoBehaviour {
     GameObject Player;
     Animator animator;
     Vector3 dir;
-    float speed = 1.0f;
+    float speed = 0.75f;
 
     void Start() {
         Player = GameObject.FindWithTag("Player");

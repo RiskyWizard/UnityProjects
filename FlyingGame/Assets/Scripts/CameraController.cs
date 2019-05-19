@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour {
     GameObject Player;
     Camera cam;
     float distance;
-    float moveTime = 0.5f;
+    float moveTime = 0.25f;
     Vector3 velocity = Vector3.zero;
     float mapHeight,mapWidth;
     Rect viewport;

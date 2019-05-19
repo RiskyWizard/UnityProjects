@@ -28,6 +28,18 @@ public class PlayerController : MonoBehaviour {
             if(Input.GetKeyDown(KeyCode.Space))
                 PlayerRB.AddForce(new Vector2(0,speed.y),ForceMode2D.Impulse);
             PlayerRB.velocity = Vector3.ClampMagnitude(PlayerRB.velocity,maxSpeed);
+            if(PlayerRB.velocity.x < 0) {
+                GetComponent<SpriteRenderer>().flipX = true;
+                transform.rotation = Quaternion.Euler(transform.rotation.x,transform.rotation.y,30);
+            }
+            else if(PlayerRB.velocity.x > 0) {
+                GetComponent<SpriteRenderer>().flipX = false;
+                transform.rotation = Quaternion.Euler(transform.rotation.x,transform.rotation.y,-30);
+            }
+            GetComponent<SpriteRenderer>().flipY = false;
+        }
+        else {
+            GetComponent<SpriteRenderer>().flipY = true;
         }
     
     }

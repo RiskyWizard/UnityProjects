@@ -6,7 +6,7 @@ public class EnemyManager : MonoBehaviour {
 
     int width, height;
     public static List<GameObject> EnemyList;
-    int numEnemies = 6;
+    int numEnemies = 12;
     GameObject EnemyInstance;
     GameObject enemies;
 
@@ -18,7 +18,7 @@ public class EnemyManager : MonoBehaviour {
         EnemyInstance = Resources.Load<GameObject>("Enemy");
 
         for(int i = 0; i < numEnemies; i++) {
-            GameObject e = GameObject.Instantiate(EnemyInstance,new Vector3(Random.Range(0,width),Random.Range(0,height),0),Quaternion.identity,enemies.transform);
+            GameObject e = GameObject.Instantiate(EnemyInstance,Map.SpawnPoint(),Quaternion.identity,enemies.transform);
             EnemyList.Add(e);
         
         }
